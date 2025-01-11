@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Bouquet</title>
+    <style>
+        body {
+            background: linear-gradient(45deg, #ff99cc, #ff69b4); /* Love-themed gradient background */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .bouquet {
+            font-size: 100px;
+            animation: bloom 2s ease-in-out infinite alternate;
+            color: #ffffff; /* White color for the bouquet */
+            text-shadow: 0 2px 4px rgba(255, 255, 255, 0.5); /* Text shadow for depth */
+        }
+
+        @keyframes bloom {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.1);
+            }
+        }
+
+        .note {
+            text-align: center;
+            margin-top: 20px;
+            color: #ffffff; /* White color for the text */
+        }
+
+        .button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ffffff; /* White color for the button */
+            color: #ff69b4; /* Pink color for the text */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #ff69b4; /* Pink color on hover */
+            color: #ffffff; /* White color on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="bouquet">💐</div>
+    <div class="note">
+        <p>Don't judge my flower,<br>you'll get a better one when we meet hopefully.</p>
+    </div>
+    <button class="button" onclick="goToIndex()">Back</button>
+
+    <script>
+        function goToIndex() {
+            window.location.href = "index.html"; // Replace with the path to your index.html file
+        }
+    </script>
+</body>
+</html>

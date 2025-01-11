@@ -1,0 +1,57 @@
+<ml lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gosego, Be Mine</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="styles!DOCTYPE html>
+<htheet" href="flower.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <h1>Dear Gosego Choncho Simataa,</h1>
+       <p> On the 8th of January, I was reminded of how special that day is for us—it marked our second anniversary. Even though we’re not dating right now, I can’t let this moment pass without saying how much you mean to me. I know I’ve made mistakes, and for that, I’m deeply sorry. You’ve always been the one my heart beats for, and I truly want to make things right between us. I miss the love we shared and the beautiful moments we created. Gosego, I’m asking for your forgiveness and a chance to start over. Will you be my girlfriend again and let us rebuild something even stronger together. Here are my heartfelt promises to you; </p>
+    
+        <ul class="promises">
+            <li>I will always cherish and respect you for who you are.</li>
+            <li>I will make time for you and ensure you always feel loved and appreciated.</li>
+            <li>I will communicate with honesty and transparency to build a strong bond.</li>
+            <li>I will bring little moments of joy into your life, whether with flowers or heartfelt words.</li>
+            <li>I will constantly strive to be someone worthy of your love and trust.</li>
+        </ul>
+        
+        <p>Gosego, I really want to do this with you. So, I ask you with an open heart:</p>
+        
+        <h2>Will You Be My Girlfriend?</h2>
+        
+        <form id="proposalForm" action="https://formspree.io/f/xzzzyjqv" method="post" onsubmit="return validateForm()">
+            <p>Your response means everything to me:</p>
+            <label>
+                <input type="radio" name="response" value="yes"> Yes, I will
+            </label>
+            <label>
+                <input type="radio" name="response" value="no"> No
+            </label>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+        
+        <p style="margin-top: 20px;" id="specialMessage">I have a surprise for you!</p>
+        <a href="flower.html" target="_blank" class="file-button" id="fileButton">Click here to see it</a>
+        
+        <p>With all my love, <br> Costa</p>
+    </div>
+    
+    <script>
+        function validateForm() {
+            const form = document.getElementById('proposalForm');
+            const response = form.response.value;
+            if (!response) {
+                alert('Please select an option.');
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>

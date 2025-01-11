@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f8ff;
+    margin: 0;
+}
+
+.flower {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.petal {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: pink;
+    border-radius: 50%;
+    transform-origin: 50% 150%;
+}
+
+.petal1 { transform: rotate(0deg) translateX(70px); }
+.petal2 { transform: rotate(45deg) translateX(70px); }
+.petal3 { transform: rotate(90deg) translateX(70px); }
+.petal4 { transform: rotate(135deg) translateX(70px); }
+.petal5 { transform: rotate(180deg) translateX(70px); }
+.petal6 { transform: rotate(225deg) translateX(70px); }
+.petal7 { transform: rotate(270deg) translateX(70px); }
+.petal8 { transform: rotate(315deg) translateX(70px); }
